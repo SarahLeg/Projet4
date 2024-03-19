@@ -1,0 +1,85 @@
+/**! link **/
+
+/************todo General ***************/
+
+* {
+    font-family: Roboto, sans-serif;
+}
+
+:root {
+    --main-color: #9356DC;
+    --second-color: #FF79DA;
+    --third-color: #99E2D0;
+}
+
+.text-grey-color {
+    color: ;
+}
+
+.pink-btn {
+
+}
+
+.heart {
+
+}
+
+.logo {
+    width: 150px;
+}
+
+
+
+
+
+/********todo header *******/
+
+.header {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+
+
+/******? presentation *********/
+
+.shadow-grey-box {
+    background-color: rgb(235, 235, 235);
+}
+
+
+/**? steps **/
+
+
+
+/*******? restaurants *******/
+
+.restaurants {
+    display: flex;
+}
+
+.restaurants-titre {
+
+}
+
+.restaurants-card {
+
+}
+
+.restaurants-text {
+
+}
+
+
+
+
+
+/*********todo footer ********/
+
+.footer {
+    
+}
+
+
+/** Media Queries pour version desktop**/
