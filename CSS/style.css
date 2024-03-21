@@ -2,6 +2,10 @@
 
 /************todo General ***************/
 
+body {
+    margin: 0px;
+}
+
 * {
     font-family: Roboto, sans-serif;
 }
@@ -13,11 +17,14 @@
 }
 
 .text-grey-color {
-    color: ;
+    color: rgb(53, 53, 53);
 }
 
 .pink-btn {
-
+    border-radius: 10px;
+    border: 0.1px;
+    background: linear-gradient(#FF79DA, #9356DC);
+    color: white;
 }
 
 .heart {
@@ -46,8 +53,23 @@
 
 .shadow-grey-box {
     background-color: rgb(235, 235, 235);
+    border-top: 2px solid darkgrey;
+    border-bottom: 3px solid darkgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
 }
 
+.elements-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.margin-title {
+    
+}
 
 /**? steps **/
 
