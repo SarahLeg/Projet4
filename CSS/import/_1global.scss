@@ -1,0 +1,50 @@
+body {
+    margin: 0px;
+}
+
+* {
+    font-family: Roboto, sans-serif;
+}
+
+* img {
+    object-fit: cover;
+}
+
+:root {
+    --main-color: #9356DC;
+    --second-color: #FF79DA;
+    --light-green: #99E2D0;
+    --dark-green: #25997c;
+    --text-grey-color: rgb(53,53,53);
+    --light-grey: rgb(240, 240, 240);
+    --dark-grey: rgb(138, 138, 138);
+    --main-bg: white;
+}
+
+.btn {
+    border-radius: 50px;
+    border: 0.1px;
+    background: linear-gradient(#FF79DA, #9356DC);
+    color: white;
+}
+
+.green-box {
+    border-radius: 3px;
+    width: 70px;
+    border: 1px solid var(--light-green);
+    background-color: var(--light-green);
+    color: var(--dark-green);
+    padding: 5px;
+    text-align: center;
+    position: relative;
+}
+
+.green
+
+.heart {
+
+}
+
+.logo {
+    width: 150px;
+}
