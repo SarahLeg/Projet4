@@ -1,9 +1,11 @@
 <head>
+    <!DOCTYPE html>
     <title>Homepage</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
-    <script src="https://kit.fontawesome.com/4f214ded0f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shrikhand">
+    <script src="https://kit.fontawesome.com/4f214ded0f.js" crossorigin="anonymous"></script>   
 </head>
 
 <body>
@@ -19,10 +21,11 @@
         <section class="hero">
             <h1 class="hero-title">Réservez le menu qui vous convient</h1>
             <p class="hero-text">Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
-            <button class="btn btn-wide">Explorer nos restaurants</button>
+            <button class="pink-btn btn-wide">Explorer nos restaurants</button>
         </section>
-        <section class="steps">
-            <h2 class="steps-title">Fonctionnement</h2>
+        <section class="section-fonctionnement">
+            <h2 class="fonctionnement-title">Fonctionnement</h2>
+            <div class="steps">
                 <button class="step">
                     <span class="purple-circle">1</span>
                     <i class="fa-solid fa-mobile-screen-button grey-icon"></i>
@@ -38,7 +41,7 @@
                     <i class="fa-solid fa-store purple-icon"></i>
                     <p>Dégustez au restaurant</p>
                 </button>
-
+            </div>
         </section>
         <section class="restaurants">
             <h2>Restaurants</h2>
@@ -46,14 +49,14 @@
                     <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
                     <h3 class="restaurants-title">La palette du goût</h3>
                     <p class="restaurants-text">Ménilmontant</p>
-                    <span class="green-box restaurants-green-box">Nouveau</span>
+                    <span class="restaurants-green-box">Nouveau</span>
                     <i class="fa-regular fa-heart restaurants-heart"></i>
                 </a>
                 <a class="restaurants-card" href="">
                     <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="">
                     <h3 class="restaurants-title">La note enchantée</h3>
                     <p class="restaurants-text">Charonne</p>
-                    <span class="green-box restaurants-green-box">Nouveau</span>
+                    <span class="restaurants-green-box">Nouveau</span>
                     <i class="fa-regular fa-heart restaurants-heart"></i>
                 </a>
                 <a class="restaurants-card" href="">
@@ -71,7 +74,17 @@
         </section>
     </main>
 
-    <footer class="footer">
-        
+    <footer class="footer footer-text">
+        <img class="footer-logo" src="images/logo/ohmyfood@2x.svg">
+            <div class="footer-line">
+                <i class="fa-solid fa-utensils footer-icon"></i>
+                <p>Proposer un restaurant</p>
+            </div>
+            <div class="footer-line">
+                <i class="fa-solid fa-handshake footer-icon"></i>
+                <p>Devenir partenaire</p>
+            </div>
+            <p>Mentions légales</p>
+            <p>Contact</p>
     </footer>
 </body>

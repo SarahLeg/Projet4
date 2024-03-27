@@ -1,4 +1,6 @@
 body {
+  max-width: 1440px;
+  min-width: 275px;
   margin: 0px;
 }
 
@@ -6,6 +8,11 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+/***
+h1, h2, h3 {
+    font-family: Shrikhand, sans-serif;
+}
+*/
 * img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -22,22 +29,11 @@ body {
   --main-bg: white;
 }
 
-.btn {
+.pink-btn {
   border-radius: 50px;
   border: 0.1px;
   background: linear-gradient(#FF79DA, #9356DC);
   color: white;
-}
-
-.green-box {
-  border-radius: 3px;
-  width: 70px;
-  border: 1px solid var(--light-green);
-  background-color: var(--light-green);
-  color: var(--dark-green);
-  padding: 5px;
-  text-align: center;
-  position: relative;
 }
 
 .logo {
@@ -58,31 +54,6 @@ body {
   justify-content: center;
   align-items: center;
   gap: 15px;
-  filter: drop-shadow(0px 0px 5px grey);
-}
-
-.hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: var(--light-grey);
-}
-
-.hero-title {
-  padding-top: 25px;
-  text-align: center;
-  padding-left: 50px;
-  padding-right: 50px;
-  margin: 0px;
-}
-
-.hero-text {
-  padding-top: 5px;
-  text-align: center;
-  padding-left: 30px;
-  padding-right: 30px;
-  margin: 0px;
-  color: var(--text-grey-color);
 }
 
 .btn-wide {
@@ -92,20 +63,40 @@ body {
   margin: 35px;
 }
 
-.steps {
-  padding-left: 15px;
+.hero {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  align-items: center;
+  background-color: var(--light-grey);
+}
+.hero .hero-title {
+  text-align: center;
+  padding: 25px 50px;
+  margin: 0px;
+}
+.hero .hero-text {
+  text-align: center;
+  padding: 5px 30px;
+  margin: 0px;
+  color: var(--text-grey-color);
+}
+
+.section-fonctionnement {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 50px;
 }
-
-.steps-title {
-  margin-top: 40px;
-  margin-bottom: 5px;
+.section-fonctionnement .fonctionnement-title {
+  margin: 40px 0px 25px 15px;
 }
 
-.step {
+.steps {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+  gap: 20px;
+}
+.steps .step {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -117,6 +108,9 @@ body {
 }
 
 .purple-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 10px;
   height: 10px;
   margin: -10px;
@@ -140,50 +134,111 @@ body {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  padding-bottom: 70px;
 }
-
-.restaurants-green-box {
-  align-self: flex-end;
-  margin-right: 15px;
-  position: relative;
-  bottom: 200px;
+.restaurants h3, .restaurants p {
+  margin-left: 10px;
 }
-
-.restaurants-heart {
-  align-self: flex-end;
-  margin-right: 15px;
-  position: relative;
-  bottom: 70px;
+.restaurants .restaurants-title {
+  font-size: 17px;
+  margin-top: 7px;
+  margin-bottom: 3px;
 }
-
-.restaurants-card {
+.restaurants .restaurants-text {
+  font-size: 15px;
+  margin-top: 0px;
+}
+.restaurants .restaurants-card {
   text-decoration: none;
   background-color: var(--main-bg);
   color: black;
   margin-right: 15px;
   height: 210px;
-  max-width: 500px;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
   border-radius: 15px;
 }
-
-.restaurants-card img {
+.restaurants .restaurants-card img {
   height: 150px;
   border-radius: 15px 15px 0px 0px;
 }
 
-h3, p {
-  margin-left: 10px;
+.restaurants-heart,
+.restaurants-green-box {
+  align-self: flex-end;
+  position: relative;
+  margin-right: 10px;
 }
 
-.restaurants-title {
-  font-size: 17px;
-  margin-top: 7px;
-  margin-bottom: 3px;
+.restaurants-heart {
+  bottom: 70px;
 }
 
-.restaurants-text {
-  font-size: 15px;
-  margin-top: 0px;
+.restaurants-green-box {
+  bottom: 200px;
+  border-radius: 3px;
+  width: 70px;
+  background-color: var(--light-green);
+  color: var(--dark-green);
+  padding: 5px;
+  text-align: center;
+}
+
+.footer {
+  padding: 20px;
+  background-color: var(--text-grey-color);
+}
+
+.footer p {
+  margin: 5px;
+}
+
+.footer-logo {
+  filter: invert(100%);
+  width: 100px;
+  margin-bottom: 15px;
+}
+
+.footer-line {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-text {
+  font-size: 14px;
+  font-family: Roboto, sans-serif;
+  color: white;
+}
+
+.footer-icon {
+  margin: 5px;
+  color: white;
+}
+
+@media only screen and (min-width: 1140px) {
+  .hero-title {
+    font-size: 40px;
+  }
+  .section-fonctionnement {
+    margin-left: 250px;
+  }
+  .steps {
+    flex-direction: row;
+  }
+  .restaurants {
+    padding-left: 265px;
+    flex-direction: row wrap;
+  }
+  .footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 45px;
+  }
+  .footer-logo {
+    margin: 5px;
+    width: 90px;
+    order: 5;
+  }
 }/*# sourceMappingURL=style.css.map */
