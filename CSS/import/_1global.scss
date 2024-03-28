@@ -8,12 +8,6 @@ body {
     font-family: Roboto, sans-serif;
 }
 
-/***
-h1, h2, h3 {
-    font-family: Shrikhand, sans-serif;
-}
-*/
-
 * img {
     object-fit: cover;
 }
@@ -31,9 +25,34 @@ h1, h2, h3 {
 
 .pink-btn {
     border-radius: 50px;
-    border: 0.1px;
     background: linear-gradient(#FF79DA, #9356DC);
     color: white;
+    text-align: center;
+    padding: 15px;
+    width: 200px;
+    font-size: 15px;
+    margin: 35px;
+    text-decoration: none;
+    transition: opacity 400ms;
+    &:hover {
+        opacity: 0.80;
+    }
+}
+
+.fa-heart {
+    &:active {
+        color: #9356DC;
+    }
+    &:focus {
+        color: #25997c;
+    }
+}
+
+.heart {
+    
+    .fa-regular {
+        color: #25997c;
+    }
 }
 
 .logo {
