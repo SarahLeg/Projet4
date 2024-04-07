@@ -13,9 +13,9 @@ $larger: 1140px;
         flex-direction: row;
     }
 
-    .restaurants {
+    .restaurants-cards {
         padding-left: 265px;
-        flex-direction: row wrap;
+        flex-flow: row wrap;
     }
 
     .footer {

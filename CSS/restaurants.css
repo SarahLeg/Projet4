@@ -1,0 +1,148 @@
+body {
+  max-width: 1440px;
+  min-width: 275px;
+  margin: 0px;
+}
+
+* {
+  font-family: Roboto, sans-serif;
+}
+
+* img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+:root {
+  --main-color: #9356DC;
+  --second-color: #FF79DA;
+  --light-green: #99E2D0;
+  --dark-green: #25997c;
+  --text-grey-color: rgb(53,53,53);
+  --light-grey: rgb(240, 240, 240);
+  --dark-grey: rgb(138, 138, 138);
+  --main-bg: white;
+}
+
+.pink-btn {
+  border-radius: 50px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  width: 200px;
+  font-size: 15px;
+  margin: 35px;
+  text-decoration: none;
+  transition: opacity 800ms;
+}
+.pink-btn:hover {
+  opacity: 0.8;
+}
+
+.logo {
+  width: 150px;
+}
+
+.header {
+  margin-top: 20px;
+  margin-bottom: 12px;
+}
+.header .header_button {
+  border: none;
+  background: none;
+  font-size: 25px;
+}
+
+img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+h1 {
+  padding-top: 40px;
+  font-family: Shrikhand;
+  font-size: 30px;
+}
+
+h3, p {
+  margin: 2px;
+}
+
+ul {
+  padding: 0px;
+}
+
+li {
+  list-style-type: none;
+  background: white;
+  border: 1px;
+  border-radius: 15px;
+}
+
+.menu {
+  background: var(--light-grey);
+  padding-left: 15px;
+  border-radius: 45px 45px 0px 0px;
+}
+.menu .menu_section_title {
+  font-size: 20px;
+  font-weight: 100;
+  border-bottom: solid 5px;
+  -o-border-image: linear-gradient(to right, #99E2D0 15%, transparent 1%) 100% 1;
+     border-image: linear-gradient(to right, #99E2D0 15%, transparent 1%) 100% 1;
+  padding-bottom: 5px;
+}
+.menu .menu_section_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.menu .euro {
+  align-self: flex-end;
+  position: relative;
+  bottom: 50px;
+  right: 15px;
+}
+
+.heart:hover {
+  background: linear-gradient(#FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 900;
+  transition: all 1000ms;
+  animation: zoomIn 2s;
+}
+
+.footer {
+  padding: 20px;
+  background-color: var(--text-grey-color);
+}
+
+.footer p {
+  margin: 5px;
+}
+
+.footer-logo {
+  filter: invert(100%);
+  width: 100px;
+  margin-bottom: 15px;
+}
+
+.footer-line {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-text {
+  font-size: 14px;
+  font-family: Roboto, sans-serif;
+  color: white;
+}
+
+.footer-icon {
+  margin: 5px;
+  color: white;
+}/*# sourceMappingURL=restaurants.css.map */

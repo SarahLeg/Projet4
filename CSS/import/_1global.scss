@@ -33,25 +33,9 @@ body {
     font-size: 15px;
     margin: 35px;
     text-decoration: none;
-    transition: opacity 400ms;
+    transition: opacity 800ms;
     &:hover {
         opacity: 0.80;
-    }
-}
-
-.fa-heart {
-    &:active {
-        color: #9356DC;
-    }
-    &:focus {
-        color: #25997c;
-    }
-}
-
-.heart {
-    
-    .fa-regular {
-        color: #25997c;
     }
 }
 
