@@ -1,19 +1,21 @@
 .header {
     margin-top: 20px;
     margin-bottom: 12px;
+    display: flex;
 
-    .header_button {
+    &__button {
+        color: var(--text-grey-color);
         border: none;
         background: none;
         font-size: 25px;
+        padding-left: 15px;
     }
-}
 
-img {
-    width: 100%;
-    object-fit: cover;
-}
+    &__logo {
+        margin: auto;
 
-.menu {
-    
+        img {
+        width: 150px;
+        }
+    }
 }

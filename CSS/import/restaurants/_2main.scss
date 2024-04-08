@@ -4,59 +4,92 @@ h1 {
     font-size: 30px;
 }
 
-h3, p {
-    margin: 2px;
-}
-
-ul {
-    padding: 0px;
-}
-
-li {
-    list-style-type: none;
-    background: white;
-    border: 1px;
-    border-radius: 15px;
+.restau_img {
+    width: 100%;
+    position: relative;
+    z-index: -1;
 }
 
 .menu {
+    margin-top: -80px;
     background: var(--light-grey);
-    padding-left: 15px;
+    padding: 0 15px;
     border-radius: 45px 45px 0px 0px;
+    padding-bottom: 100px;
 
-    .menu_section_title {
-        font-size: 20px;
-        font-weight: 100;
-        border-bottom: solid 5px;
-        border-image: linear-gradient(to right, #99E2D0 15%, transparent 1%) 100% 1;
-        padding-bottom: 5px;
+    &__section {
+
+        &__title {
+            font-size: 20px;
+            font-weight: 100;
+            border-bottom: solid 5px;
+            border-image: linear-gradient(to right, #99E2D0 15%, transparent 1%) 100% 1;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            padding: 0px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+       
+            li {
+                display: flex;
+                justify-content: space-between;
+    
+                list-style-type: none;
+                background: white;
+                border: 1px;
+                border-radius: 15px;
+                overflow: hidden;
+    
+                &:hover .menu__section__check {
+                    width: 80px;
+                    transition: width 1s;
+                }
+            }
+        }
+
+        &__content {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 10px;
+        }
+        
+        &__description {
+            h3, p {
+                margin: 5px;
+            }
+        }
+
+        &__price {
+            display: flex;
+            align-items: flex-end;
+            color: var(--text-grey-color);
+            margin: 5px;
+
+            i {
+                margin: 2px;
+            }
+        }
+
+        &__check {
+            width: 0;
+            background: var(--light-green);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+
+            &__icon {
+                font-size: 20px;
+            }
+        }
     }
 
-    .menu_section_card {
+    &__order-btn {
         display: flex;
-        flex-direction: column;
         justify-content: center;
-    }
-
-    .euro {
-        align-self: flex-end;
-        position: relative;
-        bottom: 50px;
-        right: 15px;
-    }
-}
-
-
-
-.heart {
-
-    &:hover {
-        background: linear-gradient(#FF79DA, #9356DC);
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-        font-weight: 900;
-        transition: all 1000ms;
-        animation: zoomIn 2s;
     }
 }
