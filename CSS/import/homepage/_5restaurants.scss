@@ -1,82 +1,97 @@
 .restaurants {
     background-color: var(--light-grey);
 
-    .restaurants-cards {
+    &__title {
+        margin: 15px;
+        padding-top: 40px;
+    }
+
+    &__cards {
         display: flex;
         flex-direction: column;
         padding-left: 15px;
         gap: 15px;
         padding-bottom: 70px;
-    }
 
-    h3, p {
-        margin-left: 10px;
-    }
+        &__card {
+            position: relative;
+            text-decoration: none;
+            background-color: var(--main-bg);
+            color: black;
+            margin-right: 15px;
+            height: 210px;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 15px;
 
-    .restaurants-title {
-        font-size: 17px;
-        margin-top: 7px;
-        margin-bottom: 3px;
-    }
+            & img {
+                height: 150px;
+                border-radius: 15px 15px 0px 0px;
+            }
 
-    .restaurants-text {
-        font-size: 15px;
-        margin-top: 0px;
-    }
+            &__title {
+                font-size: 17px;
+                margin-top: 7px;
+                margin-bottom: 3px;
+                margin-left: 10px;
+            }
 
-    .restaurants-card {
-        position: relative;
-        text-decoration: none;
-        background-color: var(--main-bg);
-        color: black;
-        margin-right: 15px;
-        height: 210px;
-        max-width: 400px;
-        display: flex;
-        flex-direction: column;
-        border-radius: 15px;
-    }
+            &__text {
+                font-size: 15px;
+                margin-top: 0px;
+                margin-left: 10px;
+            }
 
-    .restaurants-card img {
-        height: 150px;
-        border-radius: 15px 15px 0px 0px;
-    }
+            &__green-box {
+                align-self: flex-end;
+                position: relative;
+                margin-right: 10px;
+                bottom: 200px;
+                border-radius: 3px;
+                width: 70px;
+                background-color: var(--light-green);
+                color: var(--dark-green);
+                padding: 5px;
+                text-align: center;
+            }
 
-    .restaurants-green-box {
-        align-self: flex-end;
-        position: relative;
-        margin-right: 10px;
-        bottom: 200px;
-        border-radius: 3px;
-        width: 70px;
-        background-color: var(--light-green);
-        color: var(--dark-green);
-        padding: 5px;
-        text-align: center;
-    }
+            &__heart {
+                position: absolute;
+                bottom: 20px;
+                right: 20px;
+            
+                &:hover {
+                    background: linear-gradient(#FF79DA, #9356DC);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    color: transparent;
+                    font-weight: 900;
+                    transition: all 1000ms;
+                    animation: zoomIn 2s, fillHeart 2s;
+                }
 
-    @keyframes zoomIn {
-        0% {
-            transform: scale(1);
-        }
-        100% {
-            transform: scale(1.50);
-        }
-    }
-
-    .restaurants-heart {
-        position: absolute;
-        bottom: 20px;
-        right: 20px;
-
-        &:hover {
-            background: linear-gradient(#FF79DA, #9356DC);
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: transparent;
-            font-weight: 900;
-            transition: all 1000ms;
-            animation: zoomIn 2s;
+                @keyframes fillHeart {
+                    0% {
+                        color: transparent;
+                    }
+                    100% {
+                        color: linear-gradient(#FF79DA, #9356DC);
+                    }
+                }
+                
+                @keyframes zoomIn {
+                    from {
+                        transform: scale(1);
+                    }
+                    to {
+                        transform: scale(1.5);
+                    }
+                }
+            }
         }
     }
 }
+
+
+

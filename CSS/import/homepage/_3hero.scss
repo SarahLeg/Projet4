@@ -1,10 +1,19 @@
-.shadow-grey-box {
+.searchbar {
+    height: 50px;
     background-color: rgb(223, 223, 223);
     color: var(--text-grey-color);
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    border: none;
+    filter: drop-shadow(0px 0px 5px var(--text-grey-color));
+
+    &__style {
+        text-align: center;
+        border: none;
+        outline: none;
+        background-color: transparent;
+    }
 }
 
 .hero {
@@ -13,13 +22,13 @@
     align-items: center;
     background-color: var(--light-grey);
 
-    .hero-title {
+    &__title {
         text-align: center;
         padding: 25px 50px;
         margin: 0px;
     }
 
-    .hero-text {
+    &__text {
         text-align: center;
         padding: 5px 30px;
         margin: 0px;
