@@ -5,21 +5,6 @@
     z-index: -1;
 }
 
-.heart {
-    font-size: 25px;
-    margin-right: 30px;
-
-    &:hover {
-        background: linear-gradient(#FF79DA, #9356DC);
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-        font-weight: 900;
-        transition: all 1000ms;
-        animation: zoomIn 2s;
-    }
-}
-
 .menu {
     margin-top: -80px;
     background: var(--light-grey);
