@@ -7,28 +7,48 @@ $larger: 1140px;
     
     .ordering-process {
         margin-left: 250px;
+
+        &__steps {
+            flex-direction: row;
+        }
     }
 
-    .ordering-process__steps {
-        flex-direction: row;
+    .restaurants {
+        padding-left: 280px;
+
+        &__cards {
+            flex-flow: row wrap;
+            gap: 50px;
+    
+            &__card {
+                width: 50%;
+            }
+        }
     }
 
-    .restaurants-cards {
-        padding-left: 265px;
-        flex-flow: row wrap;
+    .menu {
+        width: 45%;
+        margin-left: 12%;
+        padding-right: 15%;
+        padding-left: 15%;
     }
+
+
+
+
+
 
     .footer {
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
         gap: 45px;
-    }
 
-    .footer__logo {
-        margin: 5px;
-        width: 90px;
-        order: 5;
+        &__logo {
+            margin: 5px;
+            width: 90px;
+            order: 5;
+        }
     }
 
 }

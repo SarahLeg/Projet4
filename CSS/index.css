@@ -380,9 +380,21 @@ body {
   .ordering-process__steps {
     flex-direction: row;
   }
-  .restaurants-cards {
-    padding-left: 265px;
+  .restaurants {
+    padding-left: 280px;
+  }
+  .restaurants__cards {
     flex-flow: row wrap;
+    gap: 50px;
+  }
+  .restaurants__cards__card {
+    width: 50%;
+  }
+  .menu {
+    width: 45%;
+    margin-left: 12%;
+    padding-right: 15%;
+    padding-left: 15%;
   }
   .footer {
     display: flex;
