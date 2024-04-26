@@ -31,16 +31,25 @@
   width: 150px;
   height: 150px;
   border: 5px solid transparent;
-  border-top-color: #9356DC;
   border-radius: 50%;
   animation: turn 0.75s ease infinite;
 }
 @keyframes turn {
-  from {
+  0% {
     transform: rotate(0turn);
+    border-top-color: #9356DC;
   }
-  from {
+  33% {
+    transform: rotate(0.33turn);
+    border-top-color: #9356DC;
+  }
+  66% {
+    transform: rotate(0.66turn);
+    border-top-color: #9356DC;
+  }
+  100% {
     transform: rotate(1turn);
+    border-top-color: #9356DC;
   }
 }
 @keyframes hiddenloader {
@@ -124,8 +133,6 @@
 }
 
 body {
-  max-width: 1440px;
-  min-width: 275px;
   margin: 0px;
 }
 
@@ -239,16 +246,22 @@ body {
 }
 .menu__section ul li:hover .menu__section__check {
   width: 80px;
-  transition: width 1s;
 }
 .menu__section__content {
   display: flex;
   justify-content: space-between;
   width: 100%;
   padding: 10px;
+  overflow: hidden;
+}
+.menu__section__description {
+  overflow: hidden;
 }
 .menu__section__description h3, .menu__section__description p {
   margin: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu__section__price {
   display: flex;
@@ -266,6 +279,7 @@ body {
   justify-content: center;
   align-items: center;
   color: white;
+  transition: width 1s;
 }
 .menu__section__check__icon {
   font-size: 20px;
@@ -281,11 +295,7 @@ body {
   color: white;
   font-size: 14px;
 }
-.footer p {
-  margin: 5px;
-}
 .footer a {
-  padding-left: 5px;
   text-decoration: none;
   color: white;
 }
@@ -299,10 +309,10 @@ body {
   flex-direction: row;
 }
 .footer__icon {
-  margin: 5px;
+  margin-right: 10px;
 }
 
-@media only screen and (min-width: 1140px) {
+@media only screen and (min-width: 768px) {
   .hero__title {
     font-size: 40px;
   }
@@ -337,6 +347,53 @@ body {
   .footer__logo {
     margin: 5px;
     width: 90px;
+    order: 5;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .ordering-process {
+    margin-left: 11%;
+  }
+  .ordering-process__title {
+    margin-left: -8px;
+    font-size: 25px;
+  }
+  .ordering-process__steps {
+    flex-direction: row;
+    gap: 2%;
+  }
+  .ordering-process__steps__step {
+    font-size: 16px;
+    font-weight: bold;
+    width: 26%;
+  }
+  .purple-circle {
+    padding: 7px;
+  }
+  .restaurants {
+    padding-left: 10%;
+  }
+  .restaurants__cards article {
+    width: 40%;
+    margin-right: 2%;
+  }
+  .menu {
+    width: 45%;
+    margin-left: 12%;
+    padding-right: 15%;
+    padding-left: 15%;
+  }
+  .footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 45px;
+    padding-top: 60px;
+    font-size: 17px;
+  }
+  .footer__logo {
+    margin-left: 5%;
+    width: 130px;
     order: 5;
   }
 }/*# sourceMappingURL=restaurants.css.map */

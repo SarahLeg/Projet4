@@ -31,13 +31,15 @@
         width: 150px;
         height: 150px;
         border: 5px solid transparent;
-        border-top-color: #9356DC;
+        
         border-radius: 50%;
         animation: turn 0.75s ease infinite;
 
         @keyframes turn {
-            from {transform: rotate(0turn);}
-            from {transform: rotate(1turn);}
+            0% {transform: rotate(0turn);border-top-color: #9356DC;}
+            33% {transform: rotate(0.33turn);border-top-color: #9356DC;}
+            66% {transform: rotate(0.66turn);border-top-color: #9356DC;}
+            100% {transform: rotate(1turn);border-top-color: #9356DC;}
         }
     }
 
