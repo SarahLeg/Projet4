@@ -22,12 +22,12 @@
             flex-direction: column;
             border-radius: 15px;
 
-            & a {     
+            a {     
             text-decoration: none;
             color: black;
             }
 
-            & img {
+            img {
                 height: 150px;
                 border-radius: 15px 15px 0px 0px;
                 width: 100%;
@@ -37,13 +37,13 @@
                 font-size: 17px;
                 margin-top: 7px;
                 margin-bottom: 3px;
-                margin-left: 10px;
+                margin-left: 3%;
             }
 
             &__text {
                 font-size: 15px;
                 margin-top: 0px;
-                margin-left: 10px;
+                margin-left: 3%;
             }
 
             &__green-box {
