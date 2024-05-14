@@ -37,19 +37,19 @@
 @keyframes turn {
   0% {
     transform: rotate(0turn);
-    border-top-color: #9356DC;
+    border-top-color: #7331c5;
   }
   33% {
     transform: rotate(0.33turn);
-    border-top-color: #9356DC;
+    border-top-color: #bf4cd6;
   }
   66% {
     transform: rotate(0.66turn);
-    border-top-color: #9356DC;
+    border-top-color: #7331c5;
   }
   100% {
     transform: rotate(1turn);
-    border-top-color: #9356DC;
+    border-top-color: #bf4cd6;
   }
 }
 @keyframes hiddenloader {
@@ -62,24 +62,11 @@
   }
 }
 
-.animation-title {
-  animation: one 0.8s linear;
-}
-@keyframes one {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-
 .animation-one {
-  animation: one 1s linear;
+  animation: slide-right 0.8s linear;
+  animation-delay: 0.1;
 }
-@keyframes one {
+@keyframes slide-right {
   from {
     margin-left: 100%;
     width: 300%;
@@ -91,45 +78,18 @@
 }
 
 .animation-two {
-  animation: two 1.2s linear;
-}
-@keyframes two {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
+  animation: slide-right 0.8s linear;
+  animation-delay: 0.2;
 }
 
 .animation-three {
-  animation: three 1.4s linear;
-}
-@keyframes three {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
+  animation: slide-right 0.8s linear;
+  animation-delay: 0.3;
 }
 
 .animation-four {
-  animation: three 1.6s linear;
-}
-@keyframes three {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
+  animation: slide-right 0.8s linear;
+  animation-delay: 0.4;
 }
 
 body {
@@ -359,6 +319,9 @@ body {
 }
 
 .footer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
   padding: 20px;
   background-color: var(--text-grey-color);
   color: white;
@@ -379,6 +342,7 @@ body {
 }
 .footer__icon {
   margin-right: 10px;
+  width: 15px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -443,7 +407,7 @@ body {
     padding-left: 15%;
   }
   .footer {
-    display: flex;
+    flex-direction: row;
     justify-content: flex-end;
     align-items: flex-end;
     gap: 25px;
@@ -527,7 +491,7 @@ body {
     padding-left: 15%;
   }
   .footer {
-    display: flex;
+    flex-direction: row;
     justify-content: flex-end;
     align-items: flex-end;
     gap: 45px;

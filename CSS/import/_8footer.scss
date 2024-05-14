@@ -1,4 +1,7 @@
 .footer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
     padding: 20px;
     background-color: var(--text-grey-color);
     color: white;
@@ -22,5 +25,6 @@
      
     &__icon {
         margin-right: 10px;
+        width: 15px;
     }
 }

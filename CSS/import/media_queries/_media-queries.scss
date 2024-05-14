@@ -84,7 +84,7 @@ $large: 1024px;
 // footer //
 
     .footer {
-        display: flex;
+        flex-direction: row;
         justify-content: flex-end;
         align-items: flex-end;
         gap: 25px;
@@ -196,7 +196,7 @@ $large: 1024px;
 // footer //
 
     .footer {
-        display: flex;
+        flex-direction: row;
         justify-content: flex-end;
         align-items: flex-end;
         gap: 45px;
